@@ -1,0 +1,6 @@
+<launch>
+
+    <node name="target_localizer" pkg="evo_autonom_driving" type="target_localizer" output="screen" ns="evo_autonom_driving">
+        <rosparam command="load" file="$(dirname)/../config/config.yaml" />
+    </node>
+</launch>

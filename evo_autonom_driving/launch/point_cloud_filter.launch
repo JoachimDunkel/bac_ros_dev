@@ -1,0 +1,5 @@
+<launch>
+    <node name="point_cloud_filter" pkg="evo_autonom_driving" type="point_cloud_filter" output="screen" ns="evo_autonom_driving">
+        <rosparam command="load" file="$(dirname)/../config/config.yaml" />
+    </node>
+</launch>

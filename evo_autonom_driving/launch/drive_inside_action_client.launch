@@ -1,0 +1,6 @@
+<launch>
+    <node name="drive_inside_action_client" pkg="evo_autonom_driving" type="evo_drive_inside_client" output="screen" ns="evo_autonom_driving">
+        <rosparam command="load" file="$(dirname)/../config/config.yaml" />
+    </node>
+
+</launch>

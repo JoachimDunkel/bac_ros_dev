@@ -1,0 +1,15 @@
+<launch>
+
+    <include file="$(find ira_laser_tools)/launch/laserscan_multi_merger.launch">
+        <arg name="scans_to_merge" value="/evo_robot/laser_2/scan /evo_robot/laser_1/scan" />
+    </include>
+
+    <include file="$(dirname)/point_cloud_filter.launch" />
+    <include file="$(dirname)/target_localizer.launch" />
+    <node name="drive_beneath_table_controller" pkg="evo_autonom_driving" type="drive_beneath_table_controller" output="screen" ns="evo_autonom_driving" required="true">
+        <rosparam command="load" file="$(dirname)/../config/config.yaml" />
+    </node>
+
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(dirname)/../config/evo_sim.rviz" />
+</launch> <!-- when using the action service. laser_scan multimerger should not be inside the launch file anymore -->
+<!-- it should probably be used for the whole system navigation independent of driving inside -->

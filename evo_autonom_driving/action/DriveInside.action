@@ -1,0 +1,9 @@
+#initial estimated table poes as goal
+geometry_msgs/PoseStamped target_pose
+---
+#Result
+std_msgs/Float64 needed_time
+---
+# last-target-pose as feedback
+geometry_msgs/PoseStamped current_pose
+

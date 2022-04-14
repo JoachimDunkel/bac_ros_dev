@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Target Localizer",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/target_localizer.launch",
+            "type": "ros"
+        },
+        {
+            "name": "Point Cloud Filter",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/point_cloud_filter.launch",
+            "type": "ros"
+        },
+        {
+            "name": "Transform Compare",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/transform_compare.launch",
+            "type": "ros",
+        },
+        {
+            "name": "Drive Beneath Table Controller",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/drive_beneath_table_controller.launch",
+            "type": "ros",
+        },
+        {
+            "name": "Single Trans Compare",
+            "request": "launch",
+            "target": "${workspaceFolder}/launch/single_transform_compare.launch",
+            "type": "ros",
+        }
+    ]
+}

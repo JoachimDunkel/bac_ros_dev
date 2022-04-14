@@ -1,0 +1,8 @@
+<launch>
+    <!-- <env name="ROS_MASTER_URI" value="http://172.17.0.2:11311/" />
+    <env name="ROS_IP" value="192.168.0.143" /> -->
+
+    <node name="drive_beneath_table_controller" pkg="evo_autonom_driving" type="drive_beneath_table_controller" output="screen" ns="evo_autonom_driving">
+        <rosparam command="load" file="$(dirname)/../config/config.yaml" />
+    </node>
+</launch>
