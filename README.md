@@ -2,7 +2,8 @@ Root repository of my bachelor-project at Tu.Graz.
 
 ### Content:
 #### evo_autonom_driving
-#### evo_performance_estimate
-#### ira_laser_tools
+The main repository of my bachelor project
 
+#### ira_laser_tools
+Preprocessing laser-scans into a single pointcloud.
 
