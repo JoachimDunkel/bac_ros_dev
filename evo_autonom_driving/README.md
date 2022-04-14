@@ -11,3 +11,8 @@ Currently arrangment of these tables is done by teleoperating our [shuttle-robot
 This repository aims at providing a plug-and-play solution, to make our robot drive inside one specific table.
 
 For a complete explaination take a look at my bachelor thesis: -alksjdf-
+
+
+@Whoever will be concerned with this at Tu-Graz:
+    There also is an automatic performance estimation pipeline for the table localisation.
+    Message me if you are interested in it.
