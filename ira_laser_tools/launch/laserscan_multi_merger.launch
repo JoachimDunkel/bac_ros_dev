@@ -1,0 +1,18 @@
+<!-- TODO -->
+<!-- change scan_time range_min and range_max to the correct values of the evo-robot -->
+
+<launch>
+	<arg name="scans_to_merge" default="/scan_front /scan_back" />
+
+	<node pkg="ira_laser_tools" name="laserscan_multi_merger" type="laserscan_multi_merger" output="screen">
+		<param name="destination_frame" value="base_link" />
+		<param name="cloud_destination_topic" value="/merged_cloud" />
+
+		<param name="laserscan_topics" value="$(arg scans_to_merge)" />
+
+		<param name="angle_increment" value="0.0058" />
+		<param name="scan_time" value="0.0333333" />
+		<param name="range_min" value="0.01" />
+		<param name="range_max" value="50.0" />
+	</node>
+</launch>
